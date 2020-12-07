@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<div th:replace="header">...</div>
+
+<body>
+
+    <form action="#" th:action="@{/addPlayer}" th:object="${player}" method="post">
+
+        <p>Trøjenummer: <input type="number" th:field="*{id}"></p>
+        <p>Age: <input type="number" th:field="*{age}"></p>
+        <p>Spiller Navn: <input type="text" th:field="*{name}" required></p>
+        <p>Position: <input type="text" th:field="*{position}" required></p>
+        <p>Nationalitet: <input type="text" th:field="*{nationality}" required></p>
+
+
+
+
+        <input type="submit" value="Tilføj" class="btn add2"/>
+    </form>
+
+    </body>
+</html>

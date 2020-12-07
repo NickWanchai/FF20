@@ -1,0 +1,27 @@
+.header {
+    color: cornflowerblue;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: darkred;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #ea0909;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Players</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<div th:replace="header">...</div>
+
+
+<body>
+
+<table class="=table" align="center">
+    <thead>
+        <tr> Navn </tr>
+        <tr>Alder </tr>
+        <tr>Trøjenummer </tr>
+        <tr>Position </tr>
+        <tr>Nationalitet </tr>
+    </thead>
+
+    <tbody>
+
+    <tr th:each="player: ${players}">
+        <td th:text="${player.getName()}"></td>
+        <td th:text="${player.getAge()}"></td>
+        <td th:text="${player.getId()}"></td>
+        <td th:text="${player.getPosition()}"></td>
+        <td th:text="${player.getNationality()}"></td>
+
+    </tr>
+
+    </tbody>
+
+</table>
+
+
+</body>
+</html>
